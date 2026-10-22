@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { ThemeProvider } from "next-themes";
+// import { ThemeProvider } from "next-themes";
 import "./globals.css";
 import Metrics from "../metrics";
 import Footer from "../components/Footer";
@@ -31,6 +31,32 @@ export const metadata: Metadata = {
   title: "Notes-Aid",
   description: "A simple app to organize your academic notes",
   applicationName: "Notes-Aid",
+  keywords: [
+    "notes",
+    "notes aid",
+    "notes aid app",
+    "notes aid website",
+    "notes aid web app",
+    "notes aid webapp",
+    "notes aid notes",
+    "notes aid academic notes",
+    "academic notes",
+    "academic notes app",
+    "academic notes website",
+    "academic notes web app",
+    "academic notes webapp",
+    "notes-aid",
+    "notes-aid app",
+    "notes-aid website",
+    "notes-aid web app",
+    "notes-aid webapp",
+    "notes-aid notes",
+    "notes-aid academic notes",
+    "minavkaria",
+    "vedanshsavla",
+    "aarushsaboo",
+    "minav"
+  ],
   openGraph: {
     type: "website",
     title: "Notes-Aid",
@@ -91,12 +117,12 @@ export default function RootLayout({
     >
       <body>
         <SessionProvider>
-          <ThemeProvider attribute="class">
+          {/* <ThemeProvider attribute="class"> */}
             <Navbar />
             {children}
             <Metrics />
             <Footer />
-          </ThemeProvider>
+          {/* </ThemeProvider> */}
         </SessionProvider>
       </body>
     </html>
